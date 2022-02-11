@@ -1,0 +1,10 @@
+- ther are mostly 2 type of web apps 1) static web apps 2) dynamic web apps 3) api base web apps.
+
+1) a stayic web apps are just kind of apps which only contain html, css, and js no any backend login no any database notthing. the static web apps can host on any static server and by requesting url we will only get the static html, css and js files only. in this kind of apps no data chang any time it just stats static.
+
+2) in dynamic we apps when we request to server the server will communicate to database get new data and then create the web page base on predefine template with that data from database and return the created html page and css and js to client.
+in this kind of apps we need to writhe server side code and base on the new data in database the page will create evertime in server whic will have dynamic data so this kind of apps need dynamic servers. because in this kind of apps the html page creates in server we also cald it SSR.
+
+3) in api base web apps when we request to server the server will communicate to database get new data and insted of creating the templete in server it just return the data directly in any format mostly in json format. and the client will get this data and build the needed template (html, css and js) in thair side. so hear all template creation part is moved to frontend. this kind of apps also need dynamic server to process the request and we have to right server side code. because in this kind of apps the template created in client side we cald it CSR of SPA
+
+- with this api base response now we can use the same code for getting the data for diffrent platforms like web, mobile, desktop etc because the template will created on thair side so it's usable on multiple places.

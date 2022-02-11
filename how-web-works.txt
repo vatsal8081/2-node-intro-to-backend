@@ -1,0 +1,18 @@
+- there is a client and server when client request to server the server return response to it in html, json, img, css etc various forms.
+
+- when a use types https://google.com/maps then in this url there is https which is a a protocol to communicate google.com is a domain name and /maps is a resource which we want to access from the server.
+
+- the domain name is not a actual location of server in web it's just a name which we can memorise easily in real world the actual address of the server will look like this 126.58.211.234:443 but it is not easy to memorise for human so that's why we have domain names.
+
+- but to convert the domain to actual ip adderss of server the client first send this request to DNS which is just a big database which has domain and it's actual address from there we will have actual ip of server like https://126.58.211.234:443
+hear the number after : is port. because in one server we can run multiple serveces like on one server we can run a node app on https://126.58.211.234:3000 and a vue app on https://126.58.211.234:8080 ports so to identify which service we want to access from multiple service running on the server port number is used.
+
+- after converting domain to ip from DNS the web create tcp/ip socket connection between the client and server which will stay alive until the client not get the response from server.
+
+- then on that tcp/ip connection the client send the request which can contain type (GET, Post, Put etc.), request headers and the request payload (request body).
+
+- then base on the route the server process the request and send back the http response which contain status code, response headers, and resource body etc. we can set our own response headers with default one as well in resource headers.
+
+- but the data which comes from response is not comming in one big chunk because it will be like going from heavy traffic with big truck. so the tcp protocol breacks the response in small chunks which is cald packets and the ip send it to the client and this packets reassemble in clients to one whole response.
+
+- now this was the just one request and response overview but in actual webpage first we request the page by url and then client request to server for all the included css, js, images and other resources which is neeeded for the page to work so there can be multiple request and response for a single webpage request. after all this is avalable the web page looks and works by the html, css and js define in it.

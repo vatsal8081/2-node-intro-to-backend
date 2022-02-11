@@ -1,0 +1,13 @@
+- everything which happens in a web browser is cald the front-end where there is mainly 3 things html, css, and js but now a days frontend devs use other things like vue, react, grabhQl etc with it to make complex tasks easy.
+
+- everything which happens in a web server is cald back-end
+
+- a web server is notthing but just a computer which is connected to internet and it can store files and rnu any http server which can process the request and send back the response
+
+- there are mostly 2 types of web servers 1) sytatic web serve 2) dynamic web servers.
+
+1) a static web server can store files and can run a simple http server which can listern to requests and provide files store in it as a response. this kind of servers are usefull to serve static sites whic hase html, css and js only.
+
+2) the dynamic servers are kind of servers which can store files in it can run the http server and also they will run a backend app which will communicate with database and return response with http server running there. so the dynamic servers can able to serve files and also run app which will communicate with database for get, update, del the data and they also usefull to do data processing, payments, returning img, videos, other contents, authantication and authorization etc.
+
+- we can use python and postgressSql, php and mysql, node and mongodb and other databases to create such servers. hear we will learn about node and mongodb.
